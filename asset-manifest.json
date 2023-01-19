@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/chat-websocket/static/css/main.bb663c1a.css",
+    "main.js": "/chat-websocket/static/js/main.ad268df4.js",
+    "static/js/787.732bf7e3.chunk.js": "/chat-websocket/static/js/787.732bf7e3.chunk.js",
+    "index.html": "/chat-websocket/index.html",
+    "main.bb663c1a.css.map": "/chat-websocket/static/css/main.bb663c1a.css.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb663c1a.css",
+    "static/js/main.ad268df4.js"
+  ]
+}
