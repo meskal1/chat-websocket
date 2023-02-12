@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/simple-chat/static/css/main.e0d30a22.css",
-    "main.js": "/simple-chat/static/js/main.d25daf70.js",
+    "main.js": "/simple-chat/static/js/main.3eaa4233.js",
     "static/js/717.477e7009.chunk.js": "/simple-chat/static/js/717.477e7009.chunk.js",
     "static/js/141.2e1b9c37.chunk.js": "/simple-chat/static/js/141.2e1b9c37.chunk.js",
     "static/js/209.b2348ea2.chunk.js": "/simple-chat/static/js/209.b2348ea2.chunk.js",
@@ -11,6 +11,6 @@
   },
   "entrypoints": [
     "static/css/main.e0d30a22.css",
-    "static/js/main.d25daf70.js"
+    "static/js/main.3eaa4233.js"
   ]
 }
