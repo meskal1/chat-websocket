@@ -4,7 +4,6 @@ import { StreamChat } from 'stream-chat'
 import { Chat, enTranslations, Streami18n } from 'stream-chat-react'
 import Cookies from 'universal-cookie'
 
-// import { getRandomImage } from './assets';
 import Auth from './Auth'
 import { useChecklist } from './ChecklistTasks'
 import { ChannelContainer } from './components/ChannelContainer/ChannelContainer'
@@ -17,15 +16,9 @@ const authToken = cookies.get('token')
 
 const urlParams = new URLSearchParams(window.location.search)
 
-const apiKey = urlParams.get('apikey') || 'hb9ywaasq4wt'
-// const user = urlParams.get('user') || '1234237';
+const apiKey = process.env.REACT_APP_API_KEY
 const theme = urlParams.get('theme') || 'light'
-// const userToken = urlParams.get('user_token') || 'hsea2a8jrz7v883awy6gzfe2q2en8yqgmcj68fsatnbm7bjc6jmjs34c2dxuaac7';
-// const userToken = urlParams.get('user_token') || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMTIzNDIzNyJ9.tJv6ewZWxkAHWGSY_hgFB4d82LTjgYcDZdRwOHnAmj8';
-const targetOrigin = '*'
-// const targetOrigin = 'https://server-six-pearl.vercel.app/'
-// const targetOrigin = urlParams.get('target_origin') || 'http://localhost:5000/auth'
-// const targetOrigin = urlParams.get('target_origin') || process.env.REACT_APP_TARGET_ORIGIN;
+const targetOrigin = process.env.REACT_APP_BASE_URL
 
 const i18nInstance = new Streami18n({
   language: 'en',
