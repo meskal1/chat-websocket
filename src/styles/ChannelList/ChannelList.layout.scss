@@ -1,0 +1,43 @@
+.str-chat-channel-list {
+  height: fit-content;
+}
+
+.str-chat__load-more-button {
+  display: none;
+}
+
+.team-channel-list {
+  width: 100%;
+
+  .str-chat__avatar-fallback {
+    background: linear-gradient(0deg, rgb(0 0 0 / 20%), rgb(0 0 0 / 20%)), var(--primary-color);
+  }
+
+  .team-channel-list__message {
+    padding: 0 16px;
+  }
+
+  .team-channel-list__message.loading {
+    height: 115px;
+  }
+
+  .team-channel-list__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 16px;
+
+    .team-channel-list__header__title {
+      height: 16px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+
+      padding-block: 4px;
+    }
+  }
+}
