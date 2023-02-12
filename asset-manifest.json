@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/chat-websocket/static/css/main.bb663c1a.css",
-    "main.js": "/chat-websocket/static/js/main.ad268df4.js",
-    "static/js/787.732bf7e3.chunk.js": "/chat-websocket/static/js/787.732bf7e3.chunk.js",
-    "index.html": "/chat-websocket/index.html",
-    "main.bb663c1a.css.map": "/chat-websocket/static/css/main.bb663c1a.css.map"
+    "main.css": "/simple-chat/static/css/main.e0d30a22.css",
+    "main.js": "/simple-chat/static/js/main.1b92bf6b.js",
+    "static/js/717.477e7009.chunk.js": "/simple-chat/static/js/717.477e7009.chunk.js",
+    "static/js/141.2e1b9c37.chunk.js": "/simple-chat/static/js/141.2e1b9c37.chunk.js",
+    "static/js/209.b2348ea2.chunk.js": "/simple-chat/static/js/209.b2348ea2.chunk.js",
+    "static/js/829.814f779a.chunk.js": "/simple-chat/static/js/829.814f779a.chunk.js",
+    "index.html": "/simple-chat/index.html",
+    "main.e0d30a22.css.map": "/simple-chat/static/css/main.e0d30a22.css.map"
   },
   "entrypoints": [
-    "static/css/main.bb663c1a.css",
-    "static/js/main.ad268df4.js"
+    "static/css/main.e0d30a22.css",
+    "static/js/main.1b92bf6b.js"
   ]
 }
