@@ -1,27 +1,27 @@
-import { Channel, SimpleReactionsList } from 'stream-chat-react';
+import { Channel, SimpleReactionsList } from 'stream-chat-react'
 
-import { AdminPanel } from '../AdminPanel/AdminPanel';
-import { ChannelInner } from './ChannelInner';
-import { EmptyChannel } from '../EmptyChannel/EmptyChannel';
-import { TeamMessageInput } from '../TeamMessageInput/TeamMessageInput';
-import {TeamTypingIndicator} from '../TeamTypingIndicator/TeamTypingIndicator';
-import { ThreadHeader } from '../TeamChannelHeader/ThreadHeader';
-import { TeamMessage } from '../TeamMessage/TeamMessage';
+import { GiphyInMessageFlagProvider } from '../../context/GiphyInMessageFlagContext'
+import { useWorkspaceController } from '../../context/WorkspaceController'
+import { AdminPanel } from '../AdminPanel/AdminPanel'
+import { EmptyChannel } from '../EmptyChannel/EmptyChannel'
+import { ThreadHeader } from '../TeamChannelHeader/ThreadHeader'
+import { TeamMessage } from '../TeamMessage/TeamMessage'
+import { TeamMessageInput } from '../TeamMessageInput/TeamMessageInput'
+import { TeamTypingIndicator } from '../TeamTypingIndicator/TeamTypingIndicator'
 
-import { GiphyInMessageFlagProvider } from '../../context/GiphyInMessageFlagContext';
-import { useWorkspaceController } from '../../context/WorkspaceController';
+import { ChannelInner } from './ChannelInner'
 
-const LoadingIndicator = () => null;
+const LoadingIndicator = () => null
 
 export const ChannelContainer = () => {
-  const { activeWorkspace } = useWorkspaceController();
+  const { activeWorkspace } = useWorkspaceController()
 
   if (activeWorkspace.match('Admin')) {
-    return <AdminPanel/>;
+    return <AdminPanel />
   }
 
   return (
-    <div className='channel__container'>
+    <div className="channel__container">
       <Channel
         EmptyStateIndicator={EmptyChannel}
         LoadingIndicator={LoadingIndicator}
@@ -36,5 +36,5 @@ export const ChannelContainer = () => {
         </GiphyInMessageFlagProvider>
       </Channel>
     </div>
-  );
-};
+  )
+}

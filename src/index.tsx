@@ -1,11 +1,7 @@
-import React from 'react';
-import App from './App';
-import { createRoot } from 'react-dom/client';
+import { createRoot } from 'react-dom/client'
 
-import './styles/index.scss';
+import App from './App'
 
-createRoot(document.getElementById('root')!).render(
-  // <React.StrictMode>
-    <App />
-  // </React.StrictMode>,
-);
+import './styles/index.scss'
+
+createRoot(document.getElementById('root')!).render(<App />)
