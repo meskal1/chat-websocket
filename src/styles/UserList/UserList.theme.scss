@@ -1,12 +1,10 @@
-
-
-
 .user-list__container {
   color: var(--text-color);
 
   h2 {
-    border-bottom: 1px solid var(--border-color);
     font: var(--font-weight-regular) 16px;
+
+    border-bottom: 1px solid var(--border-color);
   }
 }
 
@@ -15,17 +13,16 @@
 }
 
 .user-list__row.user-list__header {
-
   p {
     color: var(--text-low-emphasis-color);
   }
 }
 
 .user-list__row {
-
   &:hover {
-    background: var(--panel-primary-background-color);
     cursor: pointer;
+
+    background: var(--panel-primary-background-color);
   }
 
   p {

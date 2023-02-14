@@ -8,10 +8,11 @@
   }
 
   ul.str-chat__simple-reactions-list {
-    background: var(--static-background-color);
     line-height: 12px;
-    border-radius: 50vw;
+
+    background: var(--static-background-color);
     border: 1px solid var(--panel-secondary-background-color);
+    border-radius: 50vw;
   }
 
   ul.str-chat__simple-reactions-list:hover {
@@ -19,9 +20,9 @@
   }
 
   .str-chat__simple-reactions-list-item .emoji-mart-emoji:hover {
-    transition: transform .2s ease-in-out;
     transform: scale(1.2);
 
+    transition: transform 0.2s ease-in-out;
   }
 
   .str-chat__simple-reactions-list-item--last-number {

@@ -1,19 +1,17 @@
 .team-message-input__input .message-input__controls-button:first-of-type {
-  border-right: 1px solid rgba(204, 204, 204, 0.5);
+  border-right: 1px solid rgb(204 204 204 / 50%);
 }
 
 .team-message-input__wrapper {
   background: var(--panel-primary-background-color);
 
   .team-message-input__input {
-
     .team-message-input__top {
       background: white;
     }
 
     .team-message-input__bottom {
-      background: rgba(0, 0, 0, 0.05);
+      background: rgb(0 0 0 / 5%);
     }
   }
 }
-

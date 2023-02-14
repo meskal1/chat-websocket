@@ -11,6 +11,7 @@
 
   .str-chat__message-attachment-audio-widget {
     flex: 1 1 var(--str-chat__attachment-max-width);
+
     max-width: var(--str-chat__attachment-max-width);
   }
 
@@ -18,5 +19,3 @@
     display: none;
   }
 }
-
-

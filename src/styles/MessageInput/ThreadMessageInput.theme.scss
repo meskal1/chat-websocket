@@ -1,11 +1,12 @@
 .thread-message-input__input {
   .thread-message-input__send-button {
-    background: rgba(0, 0, 0, 0.05);
-    border: none;
     cursor: pointer;
 
+    background: rgb(0 0 0 / 5%);
+    border: none;
+
     svg path {
-      fill: var(--primary-color)
+      fill: var(--primary-color);
     }
 
     &:disabled svg path {

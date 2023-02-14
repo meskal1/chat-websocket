@@ -6,38 +6,42 @@
 }
 
 textarea {
-  background: var(--static-background-color);
   font-size: 15px;
+
+  background: var(--static-background-color);
   border: none;
   outline: none;
 
   &::placeholder {
-    color: rgba(0, 0, 0, 0.2);
+    color: rgb(0 0 0 / 20%);
   }
 }
 
 .str-chat__dropzone-container {
-  background-color: var(--str-chat__dropzone-container-background-color);
-  color: var(--str-chat__dropzone-container-color);
-  backdrop-filter: var(--str-chat__dropzone-container-backdrop-filter);
   font: var(--str-chat__subtitle-text);
+  color: var(--str-chat__dropzone-container-color);
+
+  background-color: var(--str-chat__dropzone-container-background-color);
+  backdrop-filter: var(--str-chat__dropzone-container-backdrop-filter);
 }
 
 .str-chat__suggestion-list-container {
-  border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .str-chat__send-button {
-  background: var(--str-chat__message-send-background-color);
+  cursor: pointer;
+
   color: var(--str-chat__message-send-color);
-  box-shadow: var(--str-chat__message-send-box-shadow);
-  border-radius: 8px;
+
+  background: var(--str-chat__message-send-background-color);
   border-block-start: var(--str-chat__message-send-border-block-start);
   border-block-end: var(--str-chat__message-send-border-block-end);
   border-inline-start: var(--str-chat__message-send-border-inline-start);
   border-inline-end: var(--str-chat__message-send-border-inline-end);
-  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: var(--str-chat__message-send-box-shadow);
 
   svg path {
     fill: var(--str-chat__message-send-color);
@@ -53,19 +57,20 @@ textarea {
 }
 
 .message-input__controls-button {
-  border-radius: 5px;
-  border: none;
-  background: transparent;
   cursor: pointer;
 
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+
   path {
-    fill-opacity: 0.2;
     fill: #000;
+    fill-opacity: 0.2;
   }
 
   &.active path {
-    fill-opacity: 1;
     fill: var(--primary-color);
+    fill-opacity: 1;
   }
 
   &:hover path {
@@ -79,8 +84,8 @@ textarea {
   border-radius: 12px;
 
   .giphy-icon__text {
-    font-weight: var(--font-weight-bold);
     font-size: 11px;
+    font-weight: var(--font-weight-bold);
     color: white;
   }
 }

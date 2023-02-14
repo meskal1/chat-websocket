@@ -1,4 +1,4 @@
-@use '../utils';
+@import '../mixins/mixins';
 
 .str-chat {
   --str-chat__deleted-message-background-color: white;
@@ -12,8 +12,8 @@
 
 .str-chat__message-team--editing {
   background: var(--panel-secondary-background-color);
-  box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.06), inset 0 1px 0 0 var(--primary-color),
-  inset 0 -1px 0 0 var(--primary-color);
+  box-shadow: 0 0 11px 0 rgb(0 0 0 / 6%), inset 0 1px 0 0 var(--primary-color),
+    inset 0 -1px 0 0 var(--primary-color);
 
   .str-chat__message-input {
     background: var(--panel-secondary-background-color);
@@ -37,11 +37,10 @@
   }
 }
 
-
 .quoted-message {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
   background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 15%);
 
   .quoted-message-inner {
     background: white;
@@ -50,8 +49,8 @@
 
 .str-chat__message-team-error-header {
   font-size: 10px;
-  color: rgba(0, 0, 0, 0.4);
   font-style: italic;
+  color: rgb(0 0 0 / 40%);
   text-transform: none;
 }
 
@@ -70,20 +69,20 @@
       }
 
       .str-chat__message-team-author {
-        text-transform: capitalize;
-        font-style: normal;
-        font-weight: var(--font-weight-medium);
         font-size: 13px;
+        font-weight: var(--font-weight-medium);
+        font-style: normal;
         line-height: 120%;
         color: var(--text-low-emphasis-color);
+        text-transform: capitalize;
       }
     }
 
     .str-chat__message-team-content {
-      color: var(--text-color);
       font-size: 15px;
-      line-height: 22px;
       font-weight: var(--font-weight-regular);
+      line-height: 22px;
+      color: var(--text-color);
 
       .str-chat__message-team-text--is-emoji {
         font-size: 32px;
@@ -92,11 +91,12 @@
 
       .str-chat__message-team-failed {
         @include reset-button-style;
-        color: var(--error-color);
-        cursor: pointer;
-        font-size: var(--sm-font);
-      }
 
+        cursor: pointer;
+
+        font-size: var(--sm-font);
+        color: var(--error-color);
+      }
     }
 
     .str-chat__message-team-content blockquote {
@@ -112,39 +112,41 @@
       line-height: 120%;
 
       a {
-        color: var(--primary-color);
         font-weight: var(--font-weight-bold);
+        color: var(--primary-color);
         text-decoration: none;
       }
 
       code {
-        border: 1px solid rgba(208, 2, 27, 0.1);
+        border: 1px solid rgb(208 2 27 / 10%);
         border-radius: 3px;
       }
 
       pre,
       code {
         font-family: Monaco, monospace;
-        line-height: inherit;
         font-size: 12px;
         font-weight: var(--font-weight-bold);
-        background-color: #f8f8f8;
+        line-height: inherit;
 
+        background-color: #f8f8f8;
       }
 
       pre {
-        border-radius: 4px;
         border: 1px solid #d3d3d3;
+        border-radius: 4px;
       }
     }
 
     .str-chat__message-replies-count-button {
       @include reset-button-style;
-      line-height: 15px;
-      font-weight: var(--font-weight-bold);
-      font-size: 14px;
-      color: var(--primary-color);
+
       cursor: pointer;
+
+      font-size: 14px;
+      font-weight: var(--font-weight-bold);
+      line-height: 15px;
+      color: var(--primary-color);
     }
 
     .str-chat__message-replies-count-button:focus {
@@ -155,13 +157,13 @@
 
 .str-chat__event-component__channel-event {
   .str-chat__event-component__channel-event__content {
-    color: rgba(0,0,0,0.6);
     font-size: 16px;
+    color: rgb(0 0 0 / 60%);
   }
 
   .str-chat__event-component__channel-event__sentence {
-    color: rgba(0,0,0,0.6);
     font-size: 16px;
+    color: rgb(0 0 0 / 60%);
   }
 
   .str-chat__event-component__channel-event__date {

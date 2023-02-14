@@ -1,21 +1,23 @@
-@use "mixins";
+@import '../mixins/mixins';
 
 .thread-message-input__wrapper {
-  @include mixins.message-input__wrapper;
+  @include message-input__wrapper;
+
   align-items: center;
 }
 
-
 .thread-message-input__input {
+  @include message-input__input;
   $send-button-width: 40px;
   $input-min-height: 50px;
-  @include mixins.message-input__input;
+  // hack to make the send button occupy the entire parent height (1)
+  position: relative;
+
   overflow: unset;
   display: flex;
   align-items: center;
+
   min-height: $input-min-height;
-  // hack to make the send button occupy the entire parent height (1)
-  position: relative;
   padding-right: $send-button-width;
 
   .str-chat__suggestion-list-container {
@@ -24,14 +26,15 @@
   }
 
   .thread-message-input__send-button {
+    position: absolute;
+    right: 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
     // hack to make the send button occupy the entire parent height (2)
     width: $send-button-width;
     height: 100%;
-    position: absolute;
-    right: 0;
   }
 
   .message-input__controls-button {
