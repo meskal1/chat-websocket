@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/simple-chat/static/css/main.e0d30a22.css",
-    "main.js": "/simple-chat/static/js/main.d25daf70.js",
-    "static/js/717.477e7009.chunk.js": "/simple-chat/static/js/717.477e7009.chunk.js",
+    "main.css": "/simple-chat/static/css/main.05308204.css",
+    "main.js": "/simple-chat/static/js/main.40b9a25e.js",
     "static/js/141.2e1b9c37.chunk.js": "/simple-chat/static/js/141.2e1b9c37.chunk.js",
     "static/js/209.b2348ea2.chunk.js": "/simple-chat/static/js/209.b2348ea2.chunk.js",
+    "static/js/717.477e7009.chunk.js": "/simple-chat/static/js/717.477e7009.chunk.js",
     "static/js/829.814f779a.chunk.js": "/simple-chat/static/js/829.814f779a.chunk.js",
+    "static/media/infoIcon.svg": "/simple-chat/static/media/infoIcon.fcc97fb543b6bae85184.svg",
     "index.html": "/simple-chat/index.html",
-    "main.e0d30a22.css.map": "/simple-chat/static/css/main.e0d30a22.css.map"
+    "static/media/pinIcon.svg": "/simple-chat/static/media/pinIcon.c996fa7a353adbb931ee30c6bafe5382.svg",
+    "static/media/addIconWhite.svg": "/simple-chat/static/media/addIconWhite.0d060264c68e4b3f2d08.svg",
+    "static/media/addIcon.svg": "/simple-chat/static/media/addIcon.34a418fc2d4e631a327b.svg",
+    "static/media/search.svg": "/simple-chat/static/media/search.ca81d43750680992325b.svg",
+    "main.05308204.css.map": "/simple-chat/static/css/main.05308204.css.map"
   },
   "entrypoints": [
-    "static/css/main.e0d30a22.css",
-    "static/js/main.d25daf70.js"
+    "static/css/main.05308204.css",
+    "static/js/main.40b9a25e.js"
   ]
 }
