@@ -1,21 +1,35 @@
 {
   "files": {
-    "main.css": "/simple-chat/static/css/main.05308204.css",
-    "main.js": "/simple-chat/static/js/main.6deb9200.js",
-    "static/js/141.2e1b9c37.chunk.js": "/simple-chat/static/js/141.2e1b9c37.chunk.js",
-    "static/js/209.b2348ea2.chunk.js": "/simple-chat/static/js/209.b2348ea2.chunk.js",
-    "static/js/717.477e7009.chunk.js": "/simple-chat/static/js/717.477e7009.chunk.js",
-    "static/js/829.814f779a.chunk.js": "/simple-chat/static/js/829.814f779a.chunk.js",
+    "main.css": "/simple-chat/static/css/main.2cc3f4a1.css",
+    "main.js": "/simple-chat/static/js/main.461dec24.js",
+    "static/js/997.83bd8ef8.chunk.js": "/simple-chat/static/js/997.83bd8ef8.chunk.js",
+    "static/css/997.799429ed.chunk.css": "/simple-chat/static/css/997.799429ed.chunk.css",
+    "static/js/308.993e6f44.chunk.js": "/simple-chat/static/js/308.993e6f44.chunk.js",
+    "static/css/308.4fe0367d.chunk.css": "/simple-chat/static/css/308.4fe0367d.chunk.css",
+    "static/js/697.2cba58f8.chunk.js": "/simple-chat/static/js/697.2cba58f8.chunk.js",
+    "static/css/697.7b371663.chunk.css": "/simple-chat/static/css/697.7b371663.chunk.css",
+    "static/js/968.5aef2bb1.chunk.js": "/simple-chat/static/js/968.5aef2bb1.chunk.js",
+    "static/css/968.8f8360a9.chunk.css": "/simple-chat/static/css/968.8f8360a9.chunk.css",
+    "static/js/141.e3d1fd97.chunk.js": "/simple-chat/static/js/141.e3d1fd97.chunk.js",
+    "static/js/209.b0a577e5.chunk.js": "/simple-chat/static/js/209.b0a577e5.chunk.js",
+    "static/js/878.95c35b1f.chunk.js": "/simple-chat/static/js/878.95c35b1f.chunk.js",
+    "static/js/829.4e3c7cbf.chunk.js": "/simple-chat/static/js/829.4e3c7cbf.chunk.js",
+    "static/js/607.04b0dfc3.chunk.js": "/simple-chat/static/js/607.04b0dfc3.chunk.js",
+    "static/js/457.b3cef4ae.chunk.js": "/simple-chat/static/js/457.b3cef4ae.chunk.js",
     "static/media/infoIcon.svg": "/simple-chat/static/media/infoIcon.fcc97fb543b6bae85184.svg",
     "index.html": "/simple-chat/index.html",
     "static/media/pinIcon.svg": "/simple-chat/static/media/pinIcon.c996fa7a353adbb931ee30c6bafe5382.svg",
     "static/media/addIconWhite.svg": "/simple-chat/static/media/addIconWhite.0d060264c68e4b3f2d08.svg",
     "static/media/addIcon.svg": "/simple-chat/static/media/addIcon.34a418fc2d4e631a327b.svg",
     "static/media/search.svg": "/simple-chat/static/media/search.ca81d43750680992325b.svg",
-    "main.05308204.css.map": "/simple-chat/static/css/main.05308204.css.map"
+    "main.2cc3f4a1.css.map": "/simple-chat/static/css/main.2cc3f4a1.css.map",
+    "997.799429ed.chunk.css.map": "/simple-chat/static/css/997.799429ed.chunk.css.map",
+    "308.4fe0367d.chunk.css.map": "/simple-chat/static/css/308.4fe0367d.chunk.css.map",
+    "697.7b371663.chunk.css.map": "/simple-chat/static/css/697.7b371663.chunk.css.map",
+    "968.8f8360a9.chunk.css.map": "/simple-chat/static/css/968.8f8360a9.chunk.css.map"
   },
   "entrypoints": [
-    "static/css/main.05308204.css",
-    "static/js/main.6deb9200.js"
+    "static/css/main.2cc3f4a1.css",
+    "static/js/main.461dec24.js"
   ]
 }
