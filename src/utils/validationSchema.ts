@@ -9,6 +9,7 @@ const password = yup
   .min(6, 'Password must contain at least 6 characters')
   .max(30, 'Password is too long')
   .required('Password is required')
+const avatarURL = yup.string().max(200, 'URL is too long')
 const confirmPassword = yup
   .string()
   .oneOf([yup.ref('password')], 'Password does not match')
@@ -16,4 +17,4 @@ const confirmPassword = yup
 
 export const login = yup.object({ username, password })
 
-export const signup = yup.object({ username, password, confirmPassword })
+export const signup = yup.object({ username, password, avatarURL, confirmPassword })
