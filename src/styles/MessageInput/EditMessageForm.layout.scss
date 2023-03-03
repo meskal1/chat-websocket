@@ -14,6 +14,12 @@
 
   .str-chat__message-textarea-container {
     overflow: hidden;
+
+    border: 1px solid var(--primary-color);
+
+    &:focus-within {
+      border-width: 2px;
+    }
   }
 
   .str-chat__message-textarea-react-host {
@@ -25,5 +31,15 @@
 
       width: 100%;
     }
+  }
+
+  .str-chat__edit-message-cancel {
+    color: rgb(0 0 0 / 33%);
+  }
+
+  .str-chat__edit-message-cancel,
+  .str-chat__edit-message-send {
+    font-weight: var(--font-weight-bold);
+    text-transform: none;
   }
 }

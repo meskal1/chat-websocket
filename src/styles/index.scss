@@ -3,16 +3,10 @@
 }
 @import 'global_theme_elements';
 @import 'global_theme_variables';
-@import 'layout';
-@import 'AdminPanel';
-@import 'Attachment';
-@import 'Message';
-@import 'MessageActions';
+@import './Attachment/Attachment.layout';
+@import './MessageActions/MessageActions.layout';
 @import 'MessageInput';
-@import 'MessageList';
-@import 'MessageReactions';
-@import 'Thread';
-@import 'UserList';
+@import './MessageReactions/MessageReactions.layout';
 
 *::-webkit-scrollbar {
   width: 12px; /* Remove scrollbar space */

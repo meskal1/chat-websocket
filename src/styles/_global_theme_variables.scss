@@ -7,7 +7,7 @@
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
-  --font-family: helvetica neue, sans-serif;
+  --font-family: 'Montserrat', helvetica neue, sans-serif;
   --text-color: #2c2c30;
   --text-low-emphasis-color: #858688;
   --border-color: rgb(0 0 0 / 10%);
@@ -20,6 +20,5 @@
 }
 
 .str-chat {
-  --str-chat__font-family: var(--font-family);
   --str-chat__avatar-background-color: var(--primary-color);
 }

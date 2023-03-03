@@ -1,8 +1,19 @@
 .str-chat__message-reactions-container {
   margin-block-start: 8px;
 
+  .str-chat__simple-reactions-list-item {
+    line-height: 15px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   .str-chat__simple-reactions-list-item--last-number {
     display: unset;
+
+    font-size: 11px;
+    color: var(--text-color);
   }
 
   ul.str-chat__simple-reactions-list {
@@ -11,11 +22,27 @@
 
     width: fit-content;
     padding: 6px 6px 4px 6px;
+
+    line-height: 12px;
+
+    background: var(--static-background-color);
+    border: 1px solid var(--panel-secondary-background-color);
+    border-radius: 50vw;
+
+    &:hover {
+      border: 1px solid var(--primary-color);
+    }
   }
 
   .str-chat__simple-reactions-list-item span {
     display: flex;
     align-items: center;
+  }
+
+  .str-chat__simple-reactions-list-item .emoji-mart-emoji:hover {
+    transform: scale(1.2);
+
+    transition: transform 0.2s ease-in-out;
   }
 
   .emoji-mart-emoji-custom span {
@@ -28,6 +55,9 @@
   top: -60px;
   right: 0;
   left: unset;
+
+  border: 1px solid var(--panel-secondary-background-color);
+  border-radius: var(--str-chat__border-radius-circle);
 }
 
 .str-chat__reaction-selector .emoji-mart-emoji span {

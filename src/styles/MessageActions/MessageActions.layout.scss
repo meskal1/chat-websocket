@@ -20,8 +20,14 @@
   padding: 0 4px 0;
 
   visibility: hidden;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 100px;
+  box-shadow: 0 2px 1px 0 rgb(0 0 0 / 7%);
 
   > span {
+    cursor: pointer;
+
     position: relative;
 
     display: flex;
@@ -32,9 +38,21 @@
     height: 100%;
 
     text-align: center;
+
+    svg {
+      opacity: 0.5;
+
+      fill: #000;
+    }
+
+    &:hover svg {
+      opacity: 1;
+    }
   }
 
   .str-chat__message-actions-box-button {
+    @include reset-button-style;
+
     display: flex;
     align-items: center;
   }
@@ -46,6 +64,7 @@
     left: initial;
 
     visibility: hidden;
+    border-radius: 7px;
   }
 
   .str-chat__message-actions-box--open {
