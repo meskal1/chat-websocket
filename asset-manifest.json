@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/simple-chat/static/css/main.75d5a024.css",
-    "main.js": "/simple-chat/static/js/main.22c32767.js",
-    "static/js/787.abaa33b9.chunk.js": "/simple-chat/static/js/787.abaa33b9.chunk.js",
-    "static/css/787.9b777b2a.chunk.css": "/simple-chat/static/css/787.9b777b2a.chunk.css",
+    "main.css": "/simple-chat/static/css/main.580661bc.css",
+    "main.js": "/simple-chat/static/js/main.8465f586.js",
+    "static/js/986.f5f43a0c.chunk.js": "/simple-chat/static/js/986.f5f43a0c.chunk.js",
+    "static/css/986.d9aae1ad.chunk.css": "/simple-chat/static/css/986.d9aae1ad.chunk.css",
     "static/js/308.1bb6ff15.chunk.js": "/simple-chat/static/js/308.1bb6ff15.chunk.js",
     "static/css/308.399cad66.chunk.css": "/simple-chat/static/css/308.399cad66.chunk.css",
     "static/js/541.e59bf9e6.chunk.js": "/simple-chat/static/js/541.e59bf9e6.chunk.js",
@@ -13,18 +13,18 @@
     "static/js/209.b0a577e5.chunk.js": "/simple-chat/static/js/209.b0a577e5.chunk.js",
     "static/js/829.4e3c7cbf.chunk.js": "/simple-chat/static/js/829.4e3c7cbf.chunk.js",
     "static/js/607.04b0dfc3.chunk.js": "/simple-chat/static/js/607.04b0dfc3.chunk.js",
-    "static/js/457.cc56ec1b.chunk.js": "/simple-chat/static/js/457.cc56ec1b.chunk.js",
+    "static/js/406.711ec0b4.chunk.js": "/simple-chat/static/js/406.711ec0b4.chunk.js",
     "index.html": "/simple-chat/index.html",
     "static/media/grayClip.svg": "/simple-chat/static/media/grayClip.4925f5072daa7ac635c8.svg",
     "static/media/addIconWhite.svg": "/simple-chat/static/media/addIconWhite.0d060264c68e4b3f2d08.svg",
     "static/media/search.svg": "/simple-chat/static/media/search.ca81d43750680992325b.svg",
-    "main.75d5a024.css.map": "/simple-chat/static/css/main.75d5a024.css.map",
-    "787.9b777b2a.chunk.css.map": "/simple-chat/static/css/787.9b777b2a.chunk.css.map",
+    "main.580661bc.css.map": "/simple-chat/static/css/main.580661bc.css.map",
+    "986.d9aae1ad.chunk.css.map": "/simple-chat/static/css/986.d9aae1ad.chunk.css.map",
     "308.399cad66.chunk.css.map": "/simple-chat/static/css/308.399cad66.chunk.css.map",
     "541.cb996911.chunk.css.map": "/simple-chat/static/css/541.cb996911.chunk.css.map"
   },
   "entrypoints": [
-    "static/css/main.75d5a024.css",
-    "static/js/main.22c32767.js"
+    "static/css/main.580661bc.css",
+    "static/js/main.8465f586.js"
   ]
 }
