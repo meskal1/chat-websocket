@@ -1,0 +1,97 @@
+@mixin workspace-header-layout {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+
+  height: var(--header-height);
+  min-height: var(--header-height);
+  padding: 0 20px;
+
+  .workspace-header__block,
+  .workspace-header__block-item {
+    overflow-y: hidden;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    min-width: fit-content;
+  }
+
+  > .workspace-header__block:first-of-type {
+    overflow-x: hidden;
+
+    min-width: 0;
+  }
+
+  //   .workspace-header__title,
+  //   .workspace-header__subtitle {
+  //     white-space: nowrap;
+  //   }
+
+  button {
+    @include center-content;
+
+    gap: 4px;
+  }
+}
+@mixin workspace-header-theme {
+  //   background: var(--static-background-color);
+  //   border-bottom: var(--border-stroke);
+
+  //   .workspace-header__title {
+  //     font: var(--header-title-text);
+  //     color: var(--text-color);
+  //   }
+
+  //   .workspace-header__subtitle {
+  //     font: var(--header-subtitle-text);
+  //     color: var(--text-low-emphasis-color);
+  //   }
+
+  button {
+    cursor: pointer;
+  }
+}
+@mixin reset-button-style {
+  background: none;
+  border: none;
+}
+@mixin center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin ellipsis-text {
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@mixin highlighted-button {
+  font-weight: var(--font-weight-bold);
+
+  background: rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  //   border-top-right-radius: 8px;
+  //   border-bottom-right-radius: 8px;
+}
+@mixin message-input__wrapper {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  padding: 15px 20px 28px;
+}
+@mixin message-input__input {
+  overflow: hidden;
+
+  width: 100%;
+
+  border: 1px solid rgb(0 0 0 / 20%);
+  border-radius: var(--str-chat__message-textarea-border-radius);
+
+  &:focus-within {
+    border-color: var(--primary-color);
+  }
+}
