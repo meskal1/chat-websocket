@@ -76,7 +76,21 @@
   }
 
   .user-list__column--checkbox {
+    position: relative;
+
     flex: 1;
+
+    &::before {
+      content: '';
+
+      position: absolute;
+
+      width: 21px;
+      height: 21px;
+
+      background: transparent;
+      border-radius: 30px;
+    }
   }
 
   .user-list__column--last-active,
