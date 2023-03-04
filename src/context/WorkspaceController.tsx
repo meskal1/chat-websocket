@@ -12,28 +12,20 @@ type WorkspaceContext = {
   activeWorkspace: Workspace
   closeAdminPanel: () => void
   displayWorkspace: (w: Workspace) => void
-  pinnedMessageListOpen: boolean
-  togglePinnedMessageListOpen: () => void
-  closePinnedMessageListOpen: () => void
 }
 
 const WorkspaceControllerContext = createContext<WorkspaceContext>({
   activeWorkspace: 'Chat',
   closeAdminPanel: noop,
   displayWorkspace: noop,
-  pinnedMessageListOpen: false,
-  togglePinnedMessageListOpen: noop,
-  closePinnedMessageListOpen: noop,
 })
 
 export const WorkspaceController = ({ children }: { children: React.ReactNode }) => {
   const [activeWorkspace, setActiveWorkspace] = useState<Workspace>('Chat')
-  const [pinnedMessageListOpen, setPinnedMessageListOpen] = useState(false)
 
   const displayWorkspace: WorkspaceContext['displayWorkspace'] = useCallback(
     workspace => {
       setActiveWorkspace(workspace)
-      setPinnedMessageListOpen(false)
     },
     [setActiveWorkspace]
   )
@@ -42,18 +34,12 @@ export const WorkspaceController = ({ children }: { children: React.ReactNode })
     displayWorkspace('Chat')
   }, [displayWorkspace])
 
-  const togglePinnedMessageListOpen = useCallback(() => setPinnedMessageListOpen(prev => !prev), [])
-  const closePinnedMessageListOpen = useCallback(() => setPinnedMessageListOpen(false), [])
-
   return (
     <WorkspaceControllerContext.Provider
       value={{
         activeWorkspace,
         closeAdminPanel,
         displayWorkspace,
-        pinnedMessageListOpen,
-        closePinnedMessageListOpen,
-        togglePinnedMessageListOpen,
       }}
     >
       {children}
