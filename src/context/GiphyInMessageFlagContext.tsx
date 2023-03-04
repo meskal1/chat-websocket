@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useState } from 'react'
+import { useCallback, useContext, useState, createContext } from 'react'
 
 type GiphyState = Record<'main-input' | 'thread-input', boolean>
 
@@ -12,7 +12,7 @@ type GiphyStateObj = {
   setComposeGiphyMessageFlag: () => void
   setComposeGiphyReplyFlag: () => void
 }
-export const GiphyInMessageFlagContext = React.createContext<GiphyStateObj>({} as GiphyStateObj)
+export const GiphyInMessageFlagContext = createContext<GiphyStateObj>({} as GiphyStateObj)
 
 export const GiphyInMessageFlagProvider = ({ children }: { children: React.ReactNode }) => {
   const [giphyState, setGiphyState] = useState<GiphyState>({
