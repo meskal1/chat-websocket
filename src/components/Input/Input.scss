@@ -1,0 +1,68 @@
+.input-content {
+  position: relative;
+
+  width: 100%;
+
+  .error-input {
+    pointer-events: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+
+    font-size: 10px;
+    color: red;
+  }
+
+  .placeholder {
+    pointer-events: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
+    position: absolute;
+    z-index: 1;
+    left: 0;
+
+    padding: 16px 5px 0px;
+
+    color: grey;
+
+    transition: 0.2s;
+  }
+
+  .input-not-empty ~ .placeholder {
+    transform: translateY(-16px);
+
+    font-size: 10px;
+    color: white;
+  }
+
+  .input {
+    position: relative;
+
+    width: 100%;
+    padding: 16px 5px 4px;
+
+    font-size: 16px;
+    color: white;
+
+    background: #182533;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    box-shadow: none;
+
+    transition: 0.2s;
+
+    &:focus ~ .placeholder {
+      transform: translateY(-16px);
+
+      font-size: 10px;
+      color: white;
+    }
+  }
+}
