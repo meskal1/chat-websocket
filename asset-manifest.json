@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/simple-chat/static/css/main.580661bc.css",
-    "main.js": "/simple-chat/static/js/main.8465f586.js",
-    "static/js/986.f5f43a0c.chunk.js": "/simple-chat/static/js/986.f5f43a0c.chunk.js",
-    "static/css/986.d9aae1ad.chunk.css": "/simple-chat/static/css/986.d9aae1ad.chunk.css",
+    "main.css": "/simple-chat/static/css/main.b2752967.css",
+    "main.js": "/simple-chat/static/js/main.4d096275.js",
+    "static/js/535.59d4c5a7.chunk.js": "/simple-chat/static/js/535.59d4c5a7.chunk.js",
+    "static/css/535.55a1eb28.chunk.css": "/simple-chat/static/css/535.55a1eb28.chunk.css",
     "static/js/308.1bb6ff15.chunk.js": "/simple-chat/static/js/308.1bb6ff15.chunk.js",
     "static/css/308.399cad66.chunk.css": "/simple-chat/static/css/308.399cad66.chunk.css",
     "static/js/541.e59bf9e6.chunk.js": "/simple-chat/static/js/541.e59bf9e6.chunk.js",
@@ -18,13 +18,13 @@
     "static/media/grayClip.svg": "/simple-chat/static/media/grayClip.4925f5072daa7ac635c8.svg",
     "static/media/addIconWhite.svg": "/simple-chat/static/media/addIconWhite.0d060264c68e4b3f2d08.svg",
     "static/media/search.svg": "/simple-chat/static/media/search.ca81d43750680992325b.svg",
-    "main.580661bc.css.map": "/simple-chat/static/css/main.580661bc.css.map",
-    "986.d9aae1ad.chunk.css.map": "/simple-chat/static/css/986.d9aae1ad.chunk.css.map",
+    "main.b2752967.css.map": "/simple-chat/static/css/main.b2752967.css.map",
+    "535.55a1eb28.chunk.css.map": "/simple-chat/static/css/535.55a1eb28.chunk.css.map",
     "308.399cad66.chunk.css.map": "/simple-chat/static/css/308.399cad66.chunk.css.map",
     "541.cb996911.chunk.css.map": "/simple-chat/static/css/541.cb996911.chunk.css.map"
   },
   "entrypoints": [
-    "static/css/main.580661bc.css",
-    "static/js/main.8465f586.js"
+    "static/css/main.b2752967.css",
+    "static/js/main.4d096275.js"
   ]
 }
