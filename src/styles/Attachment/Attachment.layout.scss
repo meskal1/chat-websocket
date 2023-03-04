@@ -8,7 +8,7 @@
   --str-chat__file-attachment-border-block-end: var(--attachment-border);
   --str-chat__file-attachment-border-inline-start: var(--attachment-border);
   --str-chat__file-attachment-border-inline-end: var(--attachment-border);
-  --str-chat__card-attachment-background-color: white;
+  --str-chat__card-attachment-background-color: transparent;
   --str-chat__card-attachment-border-radius: 16px;
   --str-chat__card-attachment-border-block-start: var(--attachment-border);
   --str-chat__card-attachment-border-block-end: var(--attachment-border);
@@ -47,7 +47,7 @@
 }
 
 .str-chat__attachment-list {
-  align-items: flex-start;
+  //   align-items: flex-start;
 
   .str-chat__message-attachment {
     max-width: 100%;
@@ -66,4 +66,12 @@
   .str-chat__message-attachment-card--text {
     display: none;
   }
+}
+
+.str-chat__attachment-list .str-chat__message-attachment--image,
+.str-chat__attachment-list .str-chat__message-attachment-card--header,
+.str-chat__attachment-list .str-chat__message-attachment--video {
+  margin: 1px 0 0 0;
+
+  border-radius: 15px 15px 0 0 !important;
 }
