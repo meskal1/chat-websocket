@@ -1,0 +1,29 @@
+@import '../../../../../../styles/mixins/mixins';
+
+.channel-search__result-container {
+  cursor: pointer;
+
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  width: 100%;
+  height: 48px;
+  padding: 0 12px;
+
+  &.highlighted,
+  &:hover {
+    background: var(--primary-color-alpha);
+  }
+
+  .channel-search__result-text {
+    @include ellipsis-text;
+
+    width: 100%;
+
+    font-size: 14px;
+    font-weight: var(--font-weight-medium);
+    line-height: 120%;
+    color: var(--text-color);
+  }
+}
