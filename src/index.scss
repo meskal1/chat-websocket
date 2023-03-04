@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: Montserrat, sans-serif !important;
+  letter-spacing: 0.5px !important;
+
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  resize: none;
+
+  //   overflow-y: overlay;
+
+  height: 100%;
+
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* When you tap, it removes the background rectangles */
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 14px;
+  color: white;
+
+  background: #242f3d;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+#root {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+}
+
+// Preload images
+// body::after {
+//   content: url('./assets/img/icons/logo.svg') url('./assets/img/icons/exclamationPoint.svg')
+//     url('./assets/img/icons/questionMark.svg');
+
+//   position: absolute;
+//   z-index: -1;
+
+//   overflow: hidden;
+
+//   width: 0;
+//   height: 0;
+// }
