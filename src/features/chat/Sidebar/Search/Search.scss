@@ -1,0 +1,44 @@
+@import '../../../../styles/mixins/mixins';
+
+.channel-search__container {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 10px 8px;
+}
+
+.channel-search__input__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 0;
+  height: 40px;
+  padding-left: 32px;
+
+  background: rgb(255 255 255 / 20%) url('../../../../assets/icons/search.svg') 10px 50% no-repeat;
+  border: 1px solid transparent;
+  border-radius: 30px;
+
+  &:focus-within {
+    border: 1px solid var(--static-background-color);
+  }
+
+  input::placeholder {
+    color: rgb(255 255 255 / 66%);
+  }
+
+  input {
+    min-width: 0;
+
+    font-size: 16px;
+    color: var(--static-background-color);
+
+    background: none;
+    border: none;
+    outline: none;
+  }
+}

@@ -1,0 +1,43 @@
+.channel-name-input-field {
+  display: flex;
+  flex-direction: column;
+
+  height: 169px;
+  padding: 0 20px;
+
+  h2 {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+
+    margin: 0;
+    padding: 20px 0px 15px;
+
+    font: var(--font-weight-regular) 16px;
+    font-size: 16px;
+    color: black;
+  }
+
+  input {
+    width: 100%;
+    max-width: 540px;
+    height: 50px;
+    padding-left: 16px;
+
+    font: 18px var(--font-family);
+
+    background: var(--panel-primary-background-color);
+    border: var(--border-stroke);
+    border-radius: 30px;
+
+    &::placeholder {
+      font-weight: var(--font-weight-light);
+      color: rgb(0 0 0 / 50%);
+    }
+
+    &:focus {
+      border: 1px solid var(--primary-color);
+      outline: none;
+    }
+  }
+}

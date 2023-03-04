@@ -1,0 +1,83 @@
+@import '../../../../../styles/mixins/mixins';
+
+.team-channel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  width: 100%;
+
+  .team-channel-list__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 16px;
+
+    .team-channel-list__header__title {
+      height: 16px;
+
+      font-size: 16px;
+      line-height: 16px;
+      color: rgb(255 255 255 / 66%);
+    }
+  }
+
+  .team-channel-list__message {
+    padding: 0 16px;
+
+    line-height: 20px;
+    color: white;
+  }
+
+  .team-channel-list__message.loading {
+    height: 115px;
+  }
+}
+
+.team-channel-button {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  width: 20px;
+  height: 20px;
+  padding-block: 4px;
+
+  background: url('../../../../../assets/icons/addIconWhite.svg') no-repeat;
+  border-radius: 30px;
+}
+
+// CHILDRENS
+.str-chat__channel-list-empty {
+  display: none;
+}
+
+.str-chat__channel-list-empty-v1 {
+  margin: 0px 15px 0px 15px;
+  padding: 5px 10px;
+
+  line-height: 20px;
+  color: white;
+  text-align: center;
+
+  border: 1px white dashed;
+  border-radius: 30px;
+}
+
+.str-chat {
+  --str-chat__channel-list-background-color: transparent;
+}
+
+.str-chat-channel-list {
+  height: fit-content;
+}
+
+.str-chat__load-more-button {
+  display: none;
+}
+
+.str-chat__avatar-fallback {
+  background: linear-gradient(0deg, rgb(0 0 0 / 20%), rgb(0 0 0 / 20%)), var(--primary-color);
+}

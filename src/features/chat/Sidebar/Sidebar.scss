@@ -1,0 +1,49 @@
+.sidebar {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  width: 260px;
+
+  background: var(--primary-color);
+
+  div {
+    &:nth-child(2) {
+      flex: 1 1 auto !important;
+
+      color: black !important;
+    }
+  }
+}
+
+.logout-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0px 0px 20px 0px;
+}
+
+.logout-button {
+  cursor: pointer;
+
+  width: 90%;
+  padding: 8px 20px;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+
+  background: #45f3ff;
+  border-radius: 30px;
+  box-shadow: rgb(5 243 251 / 20%) 0px 3px 1px -2px, rgb(5 243 251 / 14%) 0px 2px 2px 0px,
+    rgb(5 243 251 / 12%) 0px 1px 5px 0px;
+
+  transition: 0.2s;
+
+  &:hover {
+    background: #31b4bd;
+  }
+}

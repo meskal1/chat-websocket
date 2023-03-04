@@ -1,0 +1,42 @@
+@import '../../../../../../styles/mixins/mixins';
+
+.channel-preview__item {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  max-width: 220px;
+  height: 100%;
+  padding-left: 16px;
+
+  font-size: 16px;
+  color: white;
+
+  p {
+    @include ellipsis-text;
+  }
+
+  &.single .str-chat__avatar {
+    margin-right: 12px;
+  }
+
+  &.multi .str-chat__avatar {
+    margin-right: 0;
+  }
+
+  &.multi span:first-child {
+    position: relative;
+    z-index: 2;
+    bottom: 6px;
+  }
+
+  &.multi div:nth-child(2) {
+    position: relative;
+    z-index: 1;
+    right: 10px;
+
+    margin-bottom: 0;
+  }
+}

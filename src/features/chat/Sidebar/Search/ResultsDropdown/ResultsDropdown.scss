@@ -1,0 +1,31 @@
+.channel-search__results {
+  position: absolute;
+  z-index: 10;
+  top: 16px;
+  left: 230px;
+
+  width: 250px;
+  height: fit-content;
+  padding: 5px;
+
+  background: white;
+  border-radius: 5px;
+
+  .channel-search__results-header {
+    display: flex;
+    align-items: center;
+
+    width: fit-content;
+
+    font-size: 14px;
+    font-weight: var(--font-weight-medium);
+    line-height: 120%;
+    color: var(--text-low-emphasis-color);
+
+    i {
+      margin-left: 20px;
+
+      text-align: center;
+    }
+  }
+}
