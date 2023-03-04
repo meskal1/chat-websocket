@@ -1,0 +1,123 @@
+@import '../../../styles/mixins/mixinAdaptive';
+
+.login-container {
+  position: relative;
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+
+  width: 100%;
+  max-width: 400px;
+  padding: 2px;
+
+  text-align: center;
+
+  background: #17212b;
+  border-radius: 20px;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    z-index: 1;
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+
+    animation: animate 6s linear infinite;
+  }
+}
+
+.login-title {
+  @include adaptiveValue('margin-bottom', 15, 5, 430, 300, 1);
+
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.login-content {
+  @include adaptiveValue('padding', 30, 20, 430, 300, 1);
+
+  z-index: 2;
+  inset: 4px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #182533;
+  border-radius: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+
+  margin: 15px 0px 0px 0px;
+}
+
+.primary-button,
+.secondary-button {
+  cursor: pointer;
+
+  padding: 8px 20px;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+
+  border-radius: 30px;
+
+  transition: 0.2s;
+}
+
+.primary-button {
+  background: #45f3ff;
+  box-shadow: rgb(5 243 251 / 20%) 0px 3px 1px -2px, rgb(5 243 251 / 14%) 0px 2px 2px 0px,
+    rgb(5 243 251 / 12%) 0px 1px 5px 0px;
+
+  &:hover {
+    background: #31b4bd;
+  }
+}
+
+.secondary-button {
+  background: white;
+  box-shadow: rgb(255 255 255 / 20%) 0px 3px 1px -2px, rgb(255 255 255 / 14%) 0px 2px 2px 0px,
+    rgb(255 255 255 / 12%) 0px 1px 5px 0px;
+
+  &:hover {
+    background: rgb(202 202 202);
+  }
+}
+
+.disabled {
+  pointer-events: none;
+
+  font-weight: 500;
+  color: #787878;
+
+  background: #e0e0e0;
+}
