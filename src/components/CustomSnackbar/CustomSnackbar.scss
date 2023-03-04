@@ -1,0 +1,19 @@
+.error-container {
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 30px;
+  left: 15px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 10px;
+
+  font-weight: 600;
+  line-height: 18px;
+  color: black;
+
+  background: rgb(255 143 143);
+  border-radius: 10px;
+}
