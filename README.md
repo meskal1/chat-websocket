@@ -1,6 +1,6 @@
 # Simple chat
 
-<!-- <img src="/src/assets/preview/1.jpg" width="100%" alt="Simple chat"> -->
+<img src="/src/assets/preview/5.jpg" width="100%" alt="Simple chat">
 
 ## Description
 
