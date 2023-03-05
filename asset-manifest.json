@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/simple-chat/static/css/main.b2752967.css",
-    "main.js": "/simple-chat/static/js/main.4d096275.js",
+    "main.css": "/simple-chat/static/css/main.bd8ca621.css",
+    "main.js": "/simple-chat/static/js/main.50b5c87a.js",
     "static/js/535.59d4c5a7.chunk.js": "/simple-chat/static/js/535.59d4c5a7.chunk.js",
     "static/css/535.55a1eb28.chunk.css": "/simple-chat/static/css/535.55a1eb28.chunk.css",
     "static/js/308.1bb6ff15.chunk.js": "/simple-chat/static/js/308.1bb6ff15.chunk.js",
@@ -9,22 +9,24 @@
     "static/js/541.e59bf9e6.chunk.js": "/simple-chat/static/js/541.e59bf9e6.chunk.js",
     "static/css/541.cb996911.chunk.css": "/simple-chat/static/css/541.cb996911.chunk.css",
     "static/js/878.95c35b1f.chunk.js": "/simple-chat/static/js/878.95c35b1f.chunk.js",
-    "static/js/141.e3d1fd97.chunk.js": "/simple-chat/static/js/141.e3d1fd97.chunk.js",
-    "static/js/209.b0a577e5.chunk.js": "/simple-chat/static/js/209.b0a577e5.chunk.js",
-    "static/js/829.4e3c7cbf.chunk.js": "/simple-chat/static/js/829.4e3c7cbf.chunk.js",
+    "static/js/141.c99b71f3.chunk.js": "/simple-chat/static/js/141.c99b71f3.chunk.js",
+    "static/js/209.8c9db951.chunk.js": "/simple-chat/static/js/209.8c9db951.chunk.js",
+    "static/js/829.879eaa0e.chunk.js": "/simple-chat/static/js/829.879eaa0e.chunk.js",
     "static/js/607.04b0dfc3.chunk.js": "/simple-chat/static/js/607.04b0dfc3.chunk.js",
-    "static/js/406.711ec0b4.chunk.js": "/simple-chat/static/js/406.711ec0b4.chunk.js",
+    "static/js/406.764c1f27.chunk.js": "/simple-chat/static/js/406.764c1f27.chunk.js",
     "index.html": "/simple-chat/index.html",
+    "static/media/azureChat.svg": "/simple-chat/static/media/azureChat.3757a410ca0010bea7054e7f3ad31950.svg",
+    "static/media/whiteChat.svg": "/simple-chat/static/media/whiteChat.23237fc03f4f273f562a9f8b99dee580.svg",
     "static/media/grayClip.svg": "/simple-chat/static/media/grayClip.4925f5072daa7ac635c8.svg",
     "static/media/addIconWhite.svg": "/simple-chat/static/media/addIconWhite.0d060264c68e4b3f2d08.svg",
     "static/media/search.svg": "/simple-chat/static/media/search.ca81d43750680992325b.svg",
-    "main.b2752967.css.map": "/simple-chat/static/css/main.b2752967.css.map",
+    "main.bd8ca621.css.map": "/simple-chat/static/css/main.bd8ca621.css.map",
     "535.55a1eb28.chunk.css.map": "/simple-chat/static/css/535.55a1eb28.chunk.css.map",
     "308.399cad66.chunk.css.map": "/simple-chat/static/css/308.399cad66.chunk.css.map",
     "541.cb996911.chunk.css.map": "/simple-chat/static/css/541.cb996911.chunk.css.map"
   },
   "entrypoints": [
-    "static/css/main.b2752967.css",
-    "static/js/main.4d096275.js"
+    "static/css/main.bd8ca621.css",
+    "static/js/main.50b5c87a.js"
   ]
 }
