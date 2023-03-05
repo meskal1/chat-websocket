@@ -1,9 +1,8 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 import { CustomSnackbar } from '../components/CustomSnackbar/CustomSnackbar'
-import { LoadingProgress } from '../components/LoadingProgress/LoadingProgress'
+import { IntroAnimation } from '../components/IntroAnimation/IntroAnimation'
 import { useAppDispatch } from '../hooks/useAppDispatch'
-import { useAppSelector } from '../hooks/useAppSelector'
 import { AppRoutes } from '../routes/routes'
 import { sessionData } from '../utils/sessionData'
 
@@ -14,15 +13,19 @@ import '../styles/index.scss'
 
 const App = () => {
   const distpatch = useAppDispatch()
-  const isInitialized = useAppSelector(state => state.app.isInitialized)
+  const [isInitialized, setIsInitialized] = useState(false)
+
+  const handleAnimationLoaded = () => setIsInitialized(true)
 
   useEffect(() => {
     distpatch(initializeUserTC(sessionData()))
   }, [])
 
+  if (!isInitialized) return <IntroAnimation isAnimationLoaded={handleAnimationLoaded} />
+
   return (
     <div className="app">
-      {isInitialized ? <AppRoutes /> : <LoadingProgress />}
+      <AppRoutes />
       <CustomSnackbar />
     </div>
   )

@@ -1,0 +1,173 @@
+@import '../../styles/mixins/mixinAdaptive';
+
+.container {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 15px;
+}
+
+.content {
+  @include adaptiveValue('width', 318, 131, 350, 270, 1);
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    z-index: 1;
+    top: -25px;
+    left: -70px;
+
+    width: 70px;
+    height: 100px;
+
+    background: #242f3d;
+
+    animation: chatHide 0s ease 0.6s forwards;
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    z-index: 1;
+    right: -70px;
+    bottom: -25px;
+
+    width: 70px;
+    height: 100px;
+
+    background: #242f3d;
+
+    animation: chatHide 0s ease 0.8s forwards;
+  }
+}
+
+.azure-chat {
+  transform: rotate(-72deg) translate3d(-3px, -16px, 0);
+  transform-origin: 12px 52px;
+
+  width: 56px;
+  height: 60px;
+
+  animation: azure-chat 1.5s ease 0s forwards;
+}
+
+.white-chat {
+  transform: rotate(72deg) translate3d(3px, -16px, 0);
+  transform-origin: 45px 52px;
+
+  align-self: flex-end;
+
+  width: 56px;
+  height: 60px;
+
+  animation: white-chat 1.5s ease 0.5s forwards;
+}
+
+.logo-text {
+  @include adaptiveValue('font-size', 50, 20, 350, 270, 1);
+  @include adaptiveValue('height', 50, 20, 350, 270, 1);
+
+  display: unset;
+
+  height: 50px;
+
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+}
+
+.typewriter-cursor {
+  position: relative;
+
+  font-size: 0px;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    bottom: -2px;
+    left: 2px;
+
+    width: 3px;
+    height: 40px;
+
+    opacity: 0;
+    background: red;
+
+    animation: blink 0.7s ease 0.8s infinite;
+  }
+}
+@keyframes azure-chat {
+  0% {
+    transform: rotate(-72deg) translate3d(-3px, -16px, 0);
+  }
+
+  35% {
+    transform: rotate(15deg) translate3d(0px, 0px, 0);
+  }
+
+  55% {
+    transform: rotate(-10deg) translate3d(0px, 0px, 0);
+  }
+
+  80% {
+    transform: rotate(5deg) translate3d(0px, 0px, 0);
+  }
+
+  100% {
+    transform: rotate(0deg) translate3d(0px, 0px, 0);
+  }
+}
+@keyframes white-chat {
+  0% {
+    transform: rotate(72deg) translate3d(3px, -16px, 0);
+  }
+
+  35% {
+    transform: rotate(-15deg) translate3d(0px, 0px, 0);
+  }
+
+  55% {
+    transform: rotate(10deg) translate3d(0px, 0px, 0);
+  }
+
+  80% {
+    transform: rotate(-5deg) translate3d(0px, 0px, 0);
+  }
+
+  100% {
+    transform: rotate(0deg) translate3d(0px, 0px, 0);
+  }
+
+  //   100% {
+  //     transform: rotate(0);
+  //     //  transform: rotate(15deg) translate3d(20px, -5px, 0);
+  //   }
+}
+@keyframes chatHide {
+  100% {
+    background: transparent;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
