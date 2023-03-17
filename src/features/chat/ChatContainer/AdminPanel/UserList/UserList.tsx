@@ -28,7 +28,9 @@ export const UserList = () => {
     client.userID,
     'deleted-user-1234237-693e2db320a58b30cadd552e894c0ea8',
     'deleted-user-1237314-fdb61ef2f40d7e9ec6d44c5da18d98a6',
+    'deleted-user-1240366-29700122ec5b051bdc6926c3a990b392',
     'freelancer-self-employed',
+    'self-employed-daniel',
   ]
 
   useEffect(() => {
