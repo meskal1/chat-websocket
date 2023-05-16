@@ -40,7 +40,7 @@ export const Signup = () => {
   return (
     <div className="signup-container">
       <div className="signup-content">
-        <h2 className="signup-title">Sign up</h2>
+        <h2 className="signup-title">Registration is temporarily unavailable</h2>
         <form className="signup-form" onSubmit={formik.handleSubmit}>
           <Input
             placeholder={'Username'}
