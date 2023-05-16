@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/simple-chat/static/css/main.bd8ca621.css",
-    "main.js": "/simple-chat/static/js/main.641f86e0.js",
+    "main.js": "/simple-chat/static/js/main.b68abdd7.js",
     "static/js/535.cc6ddb3a.chunk.js": "/simple-chat/static/js/535.cc6ddb3a.chunk.js",
     "static/css/535.55a1eb28.chunk.css": "/simple-chat/static/css/535.55a1eb28.chunk.css",
-    "static/js/308.1bb6ff15.chunk.js": "/simple-chat/static/js/308.1bb6ff15.chunk.js",
+    "static/js/308.2a50a9dc.chunk.js": "/simple-chat/static/js/308.2a50a9dc.chunk.js",
     "static/css/308.399cad66.chunk.css": "/simple-chat/static/css/308.399cad66.chunk.css",
-    "static/js/541.e59bf9e6.chunk.js": "/simple-chat/static/js/541.e59bf9e6.chunk.js",
+    "static/js/541.e08f72c4.chunk.js": "/simple-chat/static/js/541.e08f72c4.chunk.js",
     "static/css/541.cb996911.chunk.css": "/simple-chat/static/css/541.cb996911.chunk.css",
     "static/js/878.95c35b1f.chunk.js": "/simple-chat/static/js/878.95c35b1f.chunk.js",
     "static/js/141.c99b71f3.chunk.js": "/simple-chat/static/js/141.c99b71f3.chunk.js",
@@ -27,6 +27,6 @@
   },
   "entrypoints": [
     "static/css/main.bd8ca621.css",
-    "static/js/main.641f86e0.js"
+    "static/js/main.b68abdd7.js"
   ]
 }
